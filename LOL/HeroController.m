@@ -26,8 +26,8 @@
     FreeHeroController *freeHero = [[FreeHeroController alloc] init];
     NSArray *controllers = @[allHero, freeHero];
     NSArray *titleArray = @[@"全部英雄", @"周免英雄"];
-    HSSegmentView *hss = [[HSSegmentView alloc] initWithFrame:CGRectMake(0, 64, screen_width, screen_height - 64) buttonName:titleArray contrllers:controllers parentController:self];
-    
+    HSSegmentView *hss = [[HSSegmentView alloc] initWithFrame:CGRectMake(0, NAVIHEIGHT, screen_width, screen_height - NAVIHEIGHT) buttonName:titleArray contrllers:controllers parentController:self];
+
     [self.view addSubview:hss];
     
 }

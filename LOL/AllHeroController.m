@@ -92,6 +92,10 @@ BOOL _bool = YES;
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, screen_width, screen_height) style:UITableViewStyleGrouped];
     _tableView.delegate = self;
     _tableView.dataSource = self;
+    _tableView.estimatedRowHeight = 0;
+    _tableView.estimatedSectionHeaderHeight = 0;
+    _tableView.estimatedSectionFooterHeight = 0;
+
     _tableView.showsVerticalScrollIndicator = NO;
     _tableView.rowHeight = 110*KWidth_ScaleW;
     _tableView.separatorInset = UIEdgeInsetsMake(0, 5, 0, 5);

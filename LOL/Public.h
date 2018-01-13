@@ -25,6 +25,9 @@
 // 设备物理尺寸
 #define screen_width [UIScreen mainScreen].bounds.size.width
 #define screen_height [UIScreen mainScreen].bounds.size.height
+#define IS_IPHONEX screen_height == 812.0
+#define NAVIHEIGHT (IS_IPHONEX?88:64)
+#define SafeAreaBottomHeight (IS_IPHONEX?34:0)
 
 
 #endif /* Public_h */

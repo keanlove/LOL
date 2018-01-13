@@ -94,6 +94,7 @@ static NSString *identifier = @"LiveCollectionViewCell";
     _collectionView.dataSource = self;
     _collectionView.backgroundColor = RGBA(200, 200, 200, 0.25);
     _collectionView.showsVerticalScrollIndicator = NO;
+ 
     // [_collectionView setBackgroundColor:[UIColor clearColor]];
     
     // 注册

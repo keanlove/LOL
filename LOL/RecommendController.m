@@ -34,8 +34,8 @@
     NSArray *controllers = @[rvc, cvc, gvc, hvc];
     NSArray *titleArray = @[@"最近更新", @"最新比赛",@"精彩集锦", @"主播解说"];
     
-    HSSegmentView *hss = [[HSSegmentView alloc] initWithFrame:CGRectMake(0, 64, screen_width, screen_height - 64) buttonName:titleArray contrllers:controllers parentController:self];
-    
+    HSSegmentView *hss = [[HSSegmentView alloc] initWithFrame:CGRectMake(0, NAVIHEIGHT, screen_width, screen_height - NAVIHEIGHT) buttonName:titleArray contrllers:controllers parentController:self];
+
     [self.view addSubview:hss];
     
     
